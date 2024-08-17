@@ -1,5 +1,5 @@
 
-TEST            := rkv_i2c_master_directed_interrupt_test
+# TEST            := rkv_i2c_master_directed_interrupt_test
 
 module_name   := i2c
 PRJ_HOME      := $(shell echo $(CURDIR) | sed -r 's|\/$(module_name)\/.*|\/$(module_name)|')
@@ -19,6 +19,8 @@ merge_cov_file  := $(shell find $(PRJ_HOME)/vdb -name "*.vdb")
 
 test:
 	echo $(PRJ_HOME)
+
+
 
 compile_option   := 	vcs  \
         	-kdb -lca  \
